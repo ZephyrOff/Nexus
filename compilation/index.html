@@ -10,33 +10,33 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Ajouter un environnement existant</title>
-    <meta name="title" content="Ajouter un environnement existant">
-    <meta name="description" content="Il est possible d'assigner un environnement existant à un projet">
+    <title>Compilation</title>
+    <meta name="title" content="Compilation">
+    <meta name="description" content="Nexus propose un système de compilation basé sur une intégration de cx_freeze grâce à ma commande compile">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://nexus.apajak.fr/Nexus/environment-management/ajouter-un-environnement-existant/">
+    <link rel="canonical" href="https://nexus.apajak.fr/Nexus/compilation/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nexus.apajak.fr/Nexus/environment-management/ajouter-un-environnement-existant/">
-    <meta property="og:title" content="Ajouter un environnement existant">
-    <meta property="og:description" content="Il est possible d'assigner un environnement existant à un projet">
+    <meta property="og:url" content="https://nexus.apajak.fr/Nexus/compilation/">
+    <meta property="og:title" content="Compilation">
+    <meta property="og:description" content="Nexus propose un système de compilation basé sur une intégration de cx_freeze grâce à ma commande compile">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nexus.apajak.fr/Nexus/environment-management/ajouter-un-environnement-existant/">
-    <meta property="twitter:title" content="Ajouter un environnement existant">
-    <meta property="twitter:description" content="Il est possible d'assigner un environnement existant à un projet">
+    <meta property="twitter:url" content="https://nexus.apajak.fr/Nexus/compilation/">
+    <meta property="twitter:title" content="Compilation">
+    <meta property="twitter:description" content="Nexus propose un système de compilation basé sur une intégration de cx_freeze grâce à ma commande compile">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752083111049" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.752083111049" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752083111049" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752083111049" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752083111049" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.752083111049" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.752083111049" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.752083111049" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +51,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Nexus Project</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -165,17 +165,18 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="ajouter-un-environnement-existant" class="break-words">
+<doc-anchor-target id="compilation" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ajouter-un-environnement-existant">#</doc-anchor-trigger>
-        <span>Ajouter un environnement existant</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#compilation">#</doc-anchor-trigger>
+        <span>Compilation</span>
     </h1>
 </doc-anchor-target>
-<p>Il est possible d&#x27;assigner un environnement existant à un projet</p>
+<p>Nexus propose un système de compilation basé sur une intégration de cx_freeze grâce à ma commande compile</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-shell-session"><code v-pre class="language-shell-session">nxs env --add {PATH}</code></pre>
+<pre class="language-shell-session"><code v-pre class="language-shell-session">nxs compile</code></pre>
 </doc-codeblock></div>
-<p>Il faudra à minima préciser le chemin vers l&#x27;environnement
+<p>Les options de compilation sont à retrouver dans le fichier nexus.toml</p>
+<p>Avant la compilation, le système va contrôler la présence de toutes les dépendances et leur compatibilité.
 <br><br></p>
 <doc-anchor-target id="options">
     <h4>
@@ -183,8 +184,10 @@
         <span>Options</span>
     </h4>
 </doc-anchor-target>
-<p><strong>--name</strong> définie le nom de l&#x27;environnement<br>
-<strong>-d</strong> ou <strong>--default</strong> pour définir ce nouvel environnement comme l&#x27;environnement par défaut<br></p>
+<p><strong>--install</strong> pour installer ou mettre à jour les dépendances manquantes<br>
+<strong>--nocheck</strong> pour désactiver la vérification du contrôle de dépendances<br>
+<strong>--dryrun</strong> pour afficher les informations de compilation sans action<br>
+<strong>-e</strong> ou <strong>--env</strong> pour préciser l&#x27;environnement qui sera utilisé pour la compilation<br></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -194,23 +197,16 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../code-analysis/securiscan/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../project-management/versioning/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Securiscan</span>
+                                                <span class="block mt-1">Versioning</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../environment-management/cloner-un-environnement/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Cloner un environnement</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -251,6 +247,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Ajouter un environnement existant", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Compilation", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
