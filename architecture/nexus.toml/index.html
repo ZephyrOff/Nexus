@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Nexus">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752073037351">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752077010415">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,11 +31,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752073037351" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752077010415" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752073037351" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752077010415" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752073037351" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752077010415" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -180,11 +180,11 @@ Ces paramètres sont regroupés par section pour une meilleure compréhension.
     </h2>
 </doc-anchor-target>
 <p>Contient les éléments de base sur la description du projet</p>
-<p>name: le nom du projet
-version: la version actuelle
-description: la description du projet
-mainfile: le fichier principal qui sera utilisé pour l&#x27;exécution du code ou encore la compilation du projet
-requires-python: les prérequis de version Python
+<p><strong>name</strong>: le nom du projet
+<strong>version</strong>: la version actuelle
+<strong>description</strong>: la description du projet
+<strong>mainfile</strong>: le fichier principal qui sera utilisé pour l&#x27;exécution du code ou encore la compilation du projet
+<strong>requires-python</strong>: les prérequis de version Python
 <br><br></p>
 <doc-anchor-target id="section-projectmetadata">
     <h2>
@@ -193,15 +193,15 @@ requires-python: les prérequis de version Python
     </h2>
 </doc-anchor-target>
 <p>Contient les métadonnées qui seront utilisées pour rendre notre projet publiable.</p>
-<p>authors: Les auteurs du projet (sous forme de liste)
-maintainers: Les mainteneurs du projet (sous forme de liste)
-readme: l&#x27;emplacement du fichier readme.md (pour la description principale qui sera utilisée)
-license: le type de licence utilisée
-license_file: l&#x27;emplacement du fichier de licence
-keywords: les mots-clés qui seront définis pour rechercher le package dans les repo
-classifiers: même remarque que keywords
-copyright: pour spécifier d&#x27;éventuels copyright
-changelog: l&#x27;emplacement du fichier de changelog
+<p><strong>authors</strong>: Les auteurs du projet (sous forme de liste)
+<strong>maintainers</strong>: Les mainteneurs du projet (sous forme de liste)
+<strong>readme</strong>: l&#x27;emplacement du fichier readme.md (pour la description principale qui sera utilisée)
+<strong>license</strong>: le type de licence utilisée
+<strong>license_file</strong>: l&#x27;emplacement du fichier de licence
+<strong>keywords</strong>: les mots-clés qui seront définis pour rechercher le package dans les repo
+<strong>classifiers</strong>: même remarque que keywords
+<strong>copyright</strong>: pour spécifier d&#x27;éventuels copyright
+<strong>changelog</strong>: l&#x27;emplacement du fichier de changelog
 <br><br></p>
 <doc-anchor-target id="section-projecturls">
     <h2>
@@ -210,9 +210,9 @@ changelog: l&#x27;emplacement du fichier de changelog
     </h2>
 </doc-anchor-target>
 <p>Contient les liens utiles affichés sur les repo</p>
-<p>changelog: l&#x27;url vers le fichier de changelog
-homepage: l&#x27;url vers la page d&#x27;accueil du projet
-documentation: l&#x27;url vers la documentation
+<p><strong>changelog</strong>: l&#x27;url vers le fichier de changelog
+<strong>homepage</strong>: l&#x27;url vers la page d&#x27;accueil du projet
+<strong>documentation</strong>: l&#x27;url vers la documentation
 <br><br></p>
 <doc-anchor-target id="section-projectdependencies">
     <h2>
@@ -231,14 +231,14 @@ NOM_PACKAGE = &quot;VERSION&quot;</p>
     </h2>
 </doc-anchor-target>
 <p>Contient les différentes informations qui seront utiles pour la création de package et la compilation.</p>
-<p>packages: La liste des packages natif ou à installer nécessaire au projet
-includes: la liste des modules internes au projet nécessaires
-excludes: La liste des packages à exclure
-include_files: La liste des fichiers annexes à intégrer au projet
-optimize: niveau d&#x27;optimisation de la compilation (0 (disabled), 1 or 2)
-no_compress: booléen qui définit si les dépendances sont dans fichier zip sans compression lors de la compilation
-GUI: booléen qui définit si le projet a une partie graphique
-icon: chemin vers le fichier icon qui sera utilisé par l&#x27;application compilée
+<p><strong>packages</strong>: La liste des packages natif ou à installer nécessaire au projet
+<strong>includes</strong>: la liste des modules internes au projet nécessaires
+<strong>excludes</strong>: La liste des packages à exclure
+<strong>include_files</strong>: La liste des fichiers annexes à intégrer au projet
+<strong>optimize</strong>: niveau d&#x27;optimisation de la compilation (0 (disabled), 1 or 2)
+<strong>no_compress</strong>: booléen qui définit si les dépendances sont dans fichier zip sans compression lors de la compilation
+<strong>GUI</strong>: booléen qui définit si le projet a une partie graphique
+<strong>icon</strong>: chemin vers le fichier icon qui sera utilisé par l&#x27;application compilée
 <br><br></p>
 <doc-anchor-target id="section-projectwheel">
     <h2>
@@ -247,8 +247,8 @@ icon: chemin vers le fichier icon qui sera utilisé par l&#x27;application compi
     </h2>
 </doc-anchor-target>
 <p>Contient les informations spécifiques pour la création de package</p>
-<p>platforms: précise la plateforme nécessaire</p>
-<p>Une sous-sectoin entry_points contient console_scripts qui contient la liste des console_scripts qui seront créés avec notre package.</p>
+<p><strong>platforms</strong>: précise la plateforme nécessaire</p>
+<p>Une sous-sectoin entry_points contient <strong>console_scripts</strong> qui contient la liste des console_scripts qui seront créés avec notre package.</p>
 
                                 
                                 <!-- Required only on API pages -->
