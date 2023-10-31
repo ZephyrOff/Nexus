@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zephyroff.github.io/Nexus/sitemap.xml.gz
+Sitemap: https://nexus.apajak.fr/Nexus/sitemap.xml.gz
