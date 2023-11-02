@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752234560832">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752236139404">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.752234560832" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752236139404" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752234560832" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752236139404" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752234560832" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752234560832" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752236139404" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752236139404" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -180,14 +180,7 @@
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs env --create {ENVNAME}</code></pre>
 </doc-codeblock></div>
 <p>Il faudra à minima préciser le nom de l&#x27;environnement</p>
-<p>Dans la configuration Nexus, il existe des paramètres qui sont utilisés pour définir le comportement lors de la création des environnements</p>
-<p>virtualenvs.create: Détermine si un environnement virtuel est créé lors de la création d&#x27;un projet Nexus<br>
-virtualenvs.clear: Détermine si le dossier de l&#x27;environnement doit être nettoyer si non vide lors de la création<br>
-virtualenvs.upgradepip: Détermine si pip doit être mis à jour lors de la création<br>
-virtualenvs.in-project: Détermine si l&#x27;environnement doit être créé dans le répertoire du projet (sinon est créé dans le répertoire cache-dir)<br>
-virtualenvs.symlinks: Détermine si l&#x27;environnement fait des liens symboliques ou copie les exécutables Python<br>
-virtualenvs.system-site-packages: Détermine si l&#x27;environnement peut utiliser le site-packages du système<br>
-virtualenvs.foldername: Détermine le nom du répertoire des environnements virtuels
+<p>Dans la <a href="../../architecture/configuration/">configuration Nexus</a>, il existe des paramètres qui sont utilisés pour définir le comportement lors de la création des environnements.
 <br><br></p>
 <doc-anchor-target id="options">
     <h4>
@@ -195,11 +188,27 @@ virtualenvs.foldername: Détermine le nom du répertoire des environnements virt
         <span>Options</span>
     </h4>
 </doc-anchor-target>
-<p><strong>-d</strong> ou <strong>--default</strong> pour définir ce nouvel environnement comme l&#x27;environnement par défaut<br>
-<strong>--withoutdeps</strong> pour définir si les dépendances du projet doit être installés au moment de la création de l&#x27;environnement<br>
-<strong>--clear</strong> pour définir si le dossier de l&#x27;environnement doit être nettoyer si non vide lors de la création<br>
-<strong>-C</strong> ou <strong>--cache</strong> pour forcer la création de l&#x27;environnement dans le dossier de cache<br>
-<strong>-p</strong> ou <strong>--prompt</strong> pour définir le prompt dans l&#x27;environnement<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-d</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--default</span>
+</span> pour définir ce nouvel environnement comme l&#x27;environnement par défaut<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--withoutdeps</span>
+</span> pour définir si les dépendances du projet doit être installés au moment de la création de l&#x27;environnement<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--clear</span>
+</span> pour définir si le dossier de l&#x27;environnement doit être nettoyer si non vide lors de la création<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-C</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--cache</span>
+</span> pour forcer la création de l&#x27;environnement dans le dossier de cache<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-p</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--prompt</span>
+</span> pour définir le prompt dans l&#x27;environnement<br></p>
 
                                 
                                 <!-- Required only on API pages -->

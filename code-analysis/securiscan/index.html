@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752234560832">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752236139404">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.752234560832" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752236139404" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752234560832" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752236139404" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752234560832" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752234560832" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752236139404" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752236139404" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -186,19 +186,59 @@
         <span>Options</span>
     </h4>
 </doc-anchor-target>
-<p><strong>-e</strong> ou <strong>--errors</strong> affichera les erreurs d&#x27;analyse<br></p>
-<p><strong>-g</strong> ou <strong>--globalmetric</strong> affichera les totales des métriques suite à l&#x27;analyse.<br>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-e</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--errors</span>
+</span> affichera les erreurs d&#x27;analyse<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-g</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--globalmetric</span>
+</span> affichera les totales des métriques suite à l&#x27;analyse.<br>
 Par exemple, le nombre de faille HIGH, MEDIUM ou LOW<br></p>
-<p><strong>-f</strong> ou <strong>--filemetric</strong> affichera les métriques par fichier.<br></p>
-<p><strong>-m</strong> ou <strong>--allmetric</strong> affichera l&#x27;ensemble des métriques.<br></p>
-<p><strong>-d</strong> ou <strong>--details</strong> affichera le détail des résultats comme les erreurs à corriger tels que le nom du fichier, le niveau de criticité, l&#x27;emplacement de l&#x27;erreur ou encore des liens vers les informations détaillées sur la faille ciblée.<br></p>
-<p><strong>-a</strong> ou <strong>--all</strong> affichera l&#x27;ensemble des informations.<br></p>
-<p><strong>-r</strong> ou <strong>--recursive</strong> permet d&#x27;analyser les fichiers .py qui se trouve dans les répertoires.
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-f</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--filemetric</span>
+</span> affichera les métriques par fichier.<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-m</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--allmetric</span>
+</span> affichera l&#x27;ensemble des métriques.<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-d</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--details</span>
+</span> affichera le détail des résultats comme les erreurs à corriger tels que le nom du fichier, le niveau de criticité, l&#x27;emplacement de l&#x27;erreur ou encore des liens vers les informations détaillées sur la faille ciblée.<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-a</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--all</span>
+</span> affichera l&#x27;ensemble des informations.<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-r</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--recursive</span>
+</span> permet d&#x27;analyser les fichiers .py qui se trouve dans les répertoires.
 Cela rendra l&#x27;analyse plus longue mais plus complète dans le cas de code complexe.<br></p>
-<p><strong>-E</strong> ou <strong>--exclude</strong> permet d&#x27;exclure certains fichiers de l&#x27;analyse<br></p>
-<p><strong>-s</strong> ou <strong>--severity</strong> permet de filtrer par niveau de severity<br>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-E</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--exclude</span>
+</span> permet d&#x27;exclure certains fichiers de l&#x27;analyse<br></p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-s</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--severity</span>
+</span> permet de filtrer par niveau de severity<br>
 1: LOW, 2: MEDIUM, 3: HIGH<br></p>
-<p><strong>-c</strong> ou <strong>--confidence</strong> permet de filtrer par niveau de confidence <br>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-c</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>--confidence</span>
+</span> permet de filtrer par niveau de confidence <br>
 1: LOW, 2: MEDIUM, 3: HIGH<br></p>
 
                                 
