@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752230200625">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752231409200">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.752230200625" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752231409200" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752230200625" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752231409200" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752230200625" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752230200625" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752231409200" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752231409200" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -180,10 +180,9 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config</code></pre>
 </doc-codeblock></div>
-<p>Il existe 2 types de paramètres:</p>
-<ul>
-<li><em><strong>Les paramètres booléen</strong></em>: Qui sont modifiables simplement en donnant le nom du paramètre dans l&#x27;appel de la commande</li>
-</ul>
+<br>
+Il existe 2 types de paramètres:
+- ***Les paramètres booléen***: Qui sont modifiables simplement en donnant le nom du paramètre dans l'appel de la commande
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config {PARAMETER}</code></pre>
 </doc-codeblock></div>
@@ -239,13 +238,13 @@ Chacun agit sur un ou plusieurs composants.
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>cache-dir</span>
 </span> : Défini l&#x27;emplacement du répertoire de cache<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>proxy</span>
 </span> : Configuration d&#x27;un proxy pour les commandes ayant besoin d&#x27;internet<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>threading</span>
 </span> : Active l&#x27;utilisation de multi-thread pour les traitements<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>threadmax</span>
 </span> : Défini le nombre maximum de thread parallèle
 <br></p>
@@ -255,14 +254,106 @@ Chacun agit sur un ou plusieurs composants.
         <span>virtualenvs</span>
     </h4>
 </doc-anchor-target>
-<br>
-#### logs
-<br>
-#### project
-<br>
-#### publish
-<br>
-#### repo
+<p>Ces paramètres seront utilisés pour la création d&#x27;un environnement virtuel.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.create</span>
+</span> : Création d&#x27;un environnement virtuel au moment de la création ou de l&#x27;initialisation d&#x27;un projet<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.clear</span>
+</span> : Nettoie le paramètre de l&#x27;environnement s&#x27;il existe déjà<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.upgradepip</span>
+</span> : Met à jour pip au moment de la création<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.in-project</span>
+</span> : Stocke l&#x27;environnement dans le projet (sinon dans le cache)<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.symlinks</span>
+</span> : Utilise des liens symboliques au lieu de copier les fichiers<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.system-site-packages</span>
+</span> : Autorise l&#x27;utilisation des site-packages système<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.foldername</span>
+</span> : Nom du répertoire des environnements<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>virtualenvs.prompt</span>
+</span> : Défini le modèle de prompt qui sera utilisé dans l&#x27;environnement<br>
+<br></p>
+<doc-anchor-target id="logs">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#logs">#</doc-anchor-trigger>
+        <span>logs</span>
+    </h4>
+</doc-anchor-target>
+<p>Ces paramètres seront utilisés pour définir le niveau de logs souhaité.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>logs.display</span>
+</span> : Affiche les logs de l&#x27;application<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>logs.full</span>
+</span> : Affiche les logs détaillés<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>logs.date</span>
+</span> : Ajoute la date dans les logs<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>logs.truecolor</span>
+</span> : Affiche les logs en version truecolor<br>
+<br></p>
+<doc-anchor-target id="project">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#project">#</doc-anchor-trigger>
+        <span>project</span>
+    </h4>
+</doc-anchor-target>
+<p>Ces paramètres seront utilisés pour délimiter le comportement du projet.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>project.changelog</span>
+</span> : Alimentation d&#x27;un changelog en cas de changement de version<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>project.deep_search</span>
+</span> : Niveau de recherche pour déterminer si on se trouve dans un projet<br>
+<br></p>
+<doc-anchor-target id="publish">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#publish">#</doc-anchor-trigger>
+        <span>publish</span>
+    </h4>
+</doc-anchor-target>
+<p>Ces paramètres seront utilisés pour publier des packages sur un repo.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>publish.url</span>
+</span> : URL du repo de package<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>publish.username</span>
+</span> : Nom de l&#x27;utilisateur utilisé<br>
+<br></p>
+<doc-anchor-target id="metadata">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#metadata">#</doc-anchor-trigger>
+        <span>metadata</span>
+    </h3>
+</doc-anchor-target>
+<p>Ces paramètres seront utilisés pour définir le comportement lors de la recherche de métadonnées sur un package.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>metadata.source</span>
+</span> : URL du repo sur lequel chercher les métadonnées<br></p>
+<doc-anchor-target id="repo">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
+        <span>repo</span>
+    </h4>
+</doc-anchor-target>
+<p>Ces paramètres seront utilisés pour définir le comportement du repo de projet.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>repo.create</span>
+</span> : Initialisation d&#x27;un repo en même temps que la création ou l&#x27;initialisation d&#x27;un projet<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>repo.commit</span>
+</span> : Défini le modèle de message qui sera utilisé pour les commit<br>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>repo.branch_autocreate</span>
+</span> : Activation du changement de branche automatique en cas de changement de version du projet<br></p>
 
                                 
                                 <!-- Required only on API pages -->
