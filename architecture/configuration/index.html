@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752230026314">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752230200625">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.752230026314" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752230200625" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752230026314" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752230200625" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752230026314" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752230026314" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752230200625" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752230200625" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -182,19 +182,24 @@
 </doc-codeblock></div>
 <p>Il existe 2 types de paramètres:</p>
 <ul>
-<li>Les paramètres booléen: Qui sont modifiables simplement en donnant le nom du paramètre dans l&#x27;appel de la commande</li>
+<li><em><strong>Les paramètres booléen</strong></em>: Qui sont modifiables simplement en donnant le nom du paramètre dans l&#x27;appel de la commande</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config {PARAMETER}</code></pre>
 </doc-codeblock></div>
 <ul>
-<li>Les paramètres à valeur: Qui sont modifiables en donnant le nom du paramètre suivi de la valeur souhaitée (en comptant que certains paramètres doivent être des nombres)</li>
+<li><em><strong>Les paramètres à valeur</strong></em>: Qui sont modifiables en donnant le nom du paramètre suivi de la valeur souhaitée (en comptant que certains paramètres doivent être des nombres)</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config {PARAMETER} {VALUE}</code></pre>
 </doc-codeblock></div>
 <br>
-### Désactivation de paramètre
+<doc-anchor-target id="désactivation-de-paramètre">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#désactivation-de-paramètre">#</doc-anchor-trigger>
+        <span>Désactivation de paramètre</span>
+    </h3>
+</doc-anchor-target>
 <p>Pour des besoins ponctuels, il est possible de désactiver ces paramètres avec l&#x27;argument <strong>--disable</strong>.
 Ces paramètres seront alors encore présent dans la configuration mais ne seront plus appliqué jusqu&#x27;à réactivation.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -205,13 +210,23 @@ Ces paramètres seront alors encore présent dans la configuration mais ne seron
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config --enable {PARAMETER}</code></pre>
 </doc-codeblock></div>
 <br>
-### Recharger la configuration
+<doc-anchor-target id="recharger-la-configuration">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recharger-la-configuration">#</doc-anchor-trigger>
+        <span>Recharger la configuration</span>
+    </h3>
+</doc-anchor-target>
 <p>Dans le cas de configuration corrompue ou erronée, il est possible de recharger la configuration avec ces paramètres par défaut avec l&#x27;argument <strong>--reload</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-shell-session"><code v-pre class="language-shell-session">nxs config --reload</code></pre>
 </doc-codeblock></div>
 <br>
-### Description des paramètres
+<doc-anchor-target id="description-des-paramètres">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#description-des-paramètres">#</doc-anchor-trigger>
+        <span>Description des paramètres</span>
+    </h3>
+</doc-anchor-target>
 <p>Ces paramètres sont regroupés en catégories (general, virtualenvs, logs, project, publish, repo).
 Chacun agit sur un ou plusieurs composants.
 <br></p>
@@ -223,13 +238,13 @@ Chacun agit sur un ou plusieurs composants.
 </doc-anchor-target>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>cache-dir</span>
-</span> : Défini l&#x27;emplacement du répertoire de cache
+</span> : Défini l&#x27;emplacement du répertoire de cache<br>
 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>proxy</span>
-</span> : Configuration d&#x27;un proxy pour les commandes ayant besoin d&#x27;internet
+</span> : Configuration d&#x27;un proxy pour les commandes ayant besoin d&#x27;internet<br>
 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>threading</span>
-</span> : Active l&#x27;utilisation de multi-thread pour les traitements
+</span> : Active l&#x27;utilisation de multi-thread pour les traitements<br>
 <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 bg-white border border-gray-300 dark:text-dark-350 dark:border-dark-450 dark:bg-dark-450 h-6 px-2 text-xs rounded-md">
     <span>threadmax</span>
 </span> : Défini le nombre maximum de thread parallèle
