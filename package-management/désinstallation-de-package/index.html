@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Initialisation &#224; partir de code existant</title>
-    <meta name="title" content="Initialisation à partir de code existant">
-    <meta name="description" content="Dans le cas où vous avez déjà des projets existants, il est possible de le \"convertir\" en projet Nexus pour être géré par la suite par cette solution.">
+    <title>D&#233;sinstallation de package</title>
+    <meta name="title" content="Désinstallation de package">
+    <meta name="description" content="Nexus propose de désinstaller des packages.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://nexus.apajak.fr/project-management/initialisation-à-partir-de-code-existant/">
+    <link rel="canonical" href="https://nexus.apajak.fr/package-management/désinstallation-de-package/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nexus.apajak.fr/project-management/initialisation-à-partir-de-code-existant/">
-    <meta property="og:title" content="Initialisation à partir de code existant">
-    <meta property="og:description" content="Dans le cas où vous avez déjà des projets existants, il est possible de le \"convertir\" en projet Nexus pour être géré par la suite par cette solution.">
+    <meta property="og:url" content="https://nexus.apajak.fr/package-management/désinstallation-de-package/">
+    <meta property="og:title" content="Désinstallation de package">
+    <meta property="og:description" content="Nexus propose de désinstaller des packages.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nexus.apajak.fr/project-management/initialisation-à-partir-de-code-existant/">
-    <meta property="twitter:title" content="Initialisation à partir de code existant">
-    <meta property="twitter:description" content="Dans le cas où vous avez déjà des projets existants, il est possible de le \"convertir\" en projet Nexus pour être géré par la suite par cette solution.">
+    <meta property="twitter:url" content="https://nexus.apajak.fr/package-management/désinstallation-de-package/">
+    <meta property="twitter:title" content="Désinstallation de package">
+    <meta property="twitter:description" content="Nexus propose de désinstaller des packages.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -169,64 +169,30 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="initialisation-à-partir-de-code-existant" class="break-words">
+<doc-anchor-target id="désinstallation-de-package" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#initialisation-à-partir-de-code-existant">#</doc-anchor-trigger>
-        <span>Initialisation à partir de code existant</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#désinstallation-de-package">#</doc-anchor-trigger>
+        <span>Désinstallation de package</span>
     </h1>
 </doc-anchor-target>
-<p>Dans le cas où vous avez déjà des projets existants, il est possible de le &quot;convertir&quot; en projet Nexus pour être géré par la suite par cette solution.</p>
+<p>Nexus propose de désinstaller des packages.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-shell-session"><code v-pre class="language-shell-session">new init {PATH}</code></pre>
+<pre class="language-shell-session"><code v-pre class="language-shell-session">nxs uninstall {PACKAGE_NAME}</code></pre>
 </doc-codeblock></div>
-<p>Plusieurs informations seront demandées:</p>
-<ul>
-<li>Le nom du projet</li>
-<li>La version d&#x27;origine</li>
-<li>La description du projet</li>
-<li>Le fichier principal</li>
-<li>Le nom de l&#x27;auteur</li>
-<li>Le nom du mainteneur</li>
-<li>La licence choisie (les informations nécessaires à la création de la licence)</li>
-</ul>
-<p>Certaines de ces informations comme maintainers ne sont pas obligatoire pour la création du projet.
-Le système va se baser sur un système d&#x27;analyse du code pour retrouver la liste des dépendances nécessaires.</p>
-<p>Une fois les informations renseignées, le projet sera initialisé et les différents composants tels que l&#x27;environnement virtuel et le repo seront créés en fonction des paramètres configurés.
-<br><br></p>
+<p>Dans le cas où nous nous trouvons dans un projet, la commande tentera de trouver un environnement par défaut disponible, sinon désinstallera les packages sur la racine Python.</p>
+<p>Dans le cas où nous nous trouvons dans un projet et que nous ne précisons pas de package, la commande va récupérer la liste des dépendances du projet et tenter de les désinstaller.
+<br></p>
 <doc-anchor-target id="options">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
         <span>Options</span>
     </h4>
 </doc-anchor-target>
-<p>La majorité de ces options se retrouve dans la configuration Nexus met propose d&#x27;être dissocié et donc d&#x27;être appliqué uniquement sur la création de ce projet.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>-e</span>
+</span> ou <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>--env</span>
-</span> pour créer un environnement virtuel<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--noenv</span>
-</span> pour ne pas créer d&#x27;environnement virtuel<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--clear</span>
-</span> pour supprimer le répertoire de l&#x27;environnement si non vide<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--upgradepip</span>
-</span> pour mettre à jour pip au moment de la création<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--inproject</span>
-</span> pour placer l&#x27;environnement dans le répertoire du projet<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--incache</span>
-</span> pour placer l&#x27;environnement dans le répertoire de cache<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--envpath</span>
-</span> pour spécifier le répertoire de l&#x27;environnement<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--repo</span>
-</span> pour créer un repo dans le projet<br>
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
-    <span>--norepo</span>
-</span> pour ne pas créer un repo dans le projet<br></p>
+</span> pour spécifier l&#x27;environnement sur lequel désinstaller les packages</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -236,20 +202,20 @@ Le système va se baser sur un système d&#x27;analyse du code pour retrouver la
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../project-management/création-dun-projet/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../package-management/installation-de-package/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Création d'un projet</span>
+                                                <span class="block mt-1">Installation de package</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../project-management/versioning/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../package-management/mise-à-jour-de-package/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Versioning</span>
+                                                <span class="block mt-1">Mise à jour de package</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -293,6 +259,6 @@ Le système va se baser sur un système d&#x27;analyse du code pour retrouver la
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Initialisation à partir de code existant", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Désinstallation de package", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
